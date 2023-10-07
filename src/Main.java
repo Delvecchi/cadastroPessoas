@@ -101,8 +101,12 @@ public class Main {
                             System.out.println("Endereço: " + cadaPf.endereco.lograduro + ", " + cadaPf.endereco.numero);
                             System.out.println("Data de Nascimento: " + cadaPf.dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
                             System.out.println("Imposto a ser pago: " + metodosPf.CalcularImposto(cadaPf.rendimento));
-
+                            System.out.println();
+                            System.out.println("Digite 0 para continuar");
+                            scanner.nextLine();
                         }
+
+                        opcaoPf = scanner.nextInt();
 
                     } else {
                         System.out.println("Lista vazia!");
